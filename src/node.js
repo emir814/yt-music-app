@@ -26,7 +26,7 @@ function createWindow() {
         autoHideMenuBar: true // üstte file edit falan fistan yaziyor onu sil
     });
 
-    // Load uBlock Origin extension
+    // ublock dahil et kardesim
     const extensionPath = path.join(__dirname, 'ublock');
     session.defaultSession.loadExtension(extensionPath)
         .then(() => {
