@@ -1,0 +1,25 @@
+{
+  "name": "ytmusic",
+  "version": "3.3.1",
+  "description": "YouTube Music App.",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.allah.ytmusic",
+    "productName": "YouTube Music",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "icon": "assets/icon.ico"
+    }
+  }
+}
