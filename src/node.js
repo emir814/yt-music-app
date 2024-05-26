@@ -20,7 +20,7 @@ function createWindow() {
         height: windowState.height || 600,
         webPreferences: {
             nodeIntegration: true,
-            contextIsolation: false, // This is required to load extensions
+            contextIsolation: false, // dahil ettik ama calismadi aga bu ne ya
         },
         icon: path.join(__dirname, 'assets', 'icon.png'), // ikon dosyasi
         autoHideMenuBar: true // üstte file edit falan fistan yaziyor onu sil
