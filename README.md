@@ -1,1 +1,1 @@
-Simple YouTube Music App. Ad Blocker Feature.
+Simple YouTube Music App. -Ad Blocker Feature.
