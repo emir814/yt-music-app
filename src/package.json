@@ -4,13 +4,16 @@
   "description": "YouTube Music App.",
   "main": "node.js",
   "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "license": "GPL-3.0",
+  "dependencies": {
     "electron": "^30.0.8",
-    "electron-builder": "^24.13.3"
+    "electron-builder": "^24.13.3",
+    "electron-store": "^10.0.0"
   },
   "build": {
     "appId": "com.allah.ytmusic",
