@@ -51,6 +51,11 @@ async function createWindow() {
   const blocker = await ElectronBlocker.fromPrebuiltAdsAndTracking(fetch);
   blocker.enableBlockingInSession(session.defaultSession);
 
+  // Kullanıcı her yeni sayfaya gittiğinde reklam engelleyiciyi etkinleştir
+  win.webContents.on('did-navigate', (event, url) => {
+    blocker.enableBlockingInSession(session.defaultSession);
+  });
+
   // Belirtilen URL'yi yükle
   win.loadURL('https://music.youtube.com/');
 }
