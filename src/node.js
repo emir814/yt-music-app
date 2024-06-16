@@ -17,7 +17,8 @@ async function createWindow() {
         height: windowState.height,
         webPreferences: {
             nodeIntegration: true,
-            contextIsolation: false, // dahil ettik ama calismadi aga bu ne ya
+            contextIsolation: true, // Daha güvenli bir seçenek
+            enableRemoteModule: true // Eğer uzaktan modülü kullanıyorsan
         },
         icon: path.join(__dirname, 'assets', 'icon.png'), // ikon dosyasi
         autoHideMenuBar: true // üstte file edit falan fistan yaziyor onu sil
